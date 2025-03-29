@@ -3,36 +3,36 @@
         <access>public</access>
         <actions_access>false</actions_access>
         <alter_access>false</alter_access>
-        <caller_access>1</caller_access>
+        <caller_access/>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
         <create_access>false</create_access>
-        <create_access_controls>false</create_access_controls>
+        <create_access_controls>true</create_access_controls>
         <delete_access>false</delete_access>
         <filter_extension/>
         <is_extendable>false</is_extendable>
-        <label>Loaner Request</label>
+        <label>Loaner Task</label>
         <live_feed_enabled>false</live_feed_enabled>
-        <name>x_1137867_loaner_r_loaner_request</name>
-        <number_ref display_value="LNR">035eb0b983a06a509c155e65eeaad30b</number_ref>
+        <name>x_1137867_loaner_r_loaner_task</name>
+        <number_ref/>
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
         <super_class display_value="Task" name="task">facbb06a340112104f343065f8c74951</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-28 08:23:11</sys_created_on>
-        <sys_id>b65e70b983a06a509c155e65eeaad390</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>Loaner Request</sys_name>
+        <sys_created_on>2025-03-29 08:31:48</sys_created_on>
+        <sys_id>5b89c68a832caa509c155e65eeaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loaner Task</sys_name>
         <sys_package display_value="Loaner Request" source="x_1137867_loaner_r">3d8dfc3983a06a509c155e65eeaad36e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Request">3d8dfc3983a06a509c155e65eeaad36e</sys_scope>
-        <sys_update_name>sys_db_object_b65e70b983a06a509c155e65eeaad390</sys_update_name>
+        <sys_update_name>sys_db_object_5b89c68a832caa509c155e65eeaad3c4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-29 08:08:25</sys_updated_on>
-        <update_access>true</update_access>
-        <user_role/>
+        <sys_updated_on>2025-03-29 08:31:48</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_1137867_loaner_r.admin" name="x_1137867_loaner_r.admin">7062718683a8aa509c155e65eeaad397</user_role>
         <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>
