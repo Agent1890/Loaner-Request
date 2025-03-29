@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>cmdb_ci</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set loaner item type</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    //Type appropriate comment here, and begin script below
+    var ci = g_form.getDisplayBox('cmdb_ci').value;
+    alert(ci);
+    if (ci.indexOf('*Android') < 1 || ci.indexOf('*blackberry') < 1 || ci.indexOf('*iphone') < 1) {
+        g_form.setValue('item_type', 'cmdb_ci_mobile_device');
+        g_form.setReadOnly('item_type', true);
+    } else if (ci.indexOf('*macbook') < 1) {
+        g_form.setValue('item_type', 'cmdb_ci_computer');
+        g_form.setReadOnly('item_type', true);
+    } else {
+        g_form.setReadOnly('item_type', false);
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-28 16:13:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ec786e7d83a86a509c155e65eeaad377</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Set loaner item type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Request" source="x_1137867_loaner_r">3d8dfc3983a06a509c155e65eeaad36e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">3d8dfc3983a06a509c155e65eeaad36e</sys_scope>
+        <sys_update_name>sys_script_client_ec786e7d83a86a509c155e65eeaad377</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-28 16:37:27</sys_updated_on>
+        <table>x_1137867_loaner_r_loaner_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
